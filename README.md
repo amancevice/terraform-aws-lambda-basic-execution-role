@@ -9,6 +9,6 @@ module basic {
   source          = "amancevice/lambda-basic-execution-role/aws"
   name            = "my-lambda-role"
   attachments     = ["<optional-additional-policy-arns>"]
-  inline_policies = ["<optional-additional-inline-policy-docs"]
+  inline_policies = ["<optional-additional-inline-policy-docs>"]
 }
 ```
