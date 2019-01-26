@@ -24,3 +24,9 @@ resource aws_iam_role_policy_attachment additional {
   policy_arn = "${element(var.attachments, count.index)}"
   role       = "${aws_iam_role.role.name}"
 }
+
+resource aws_iam_role_policy inline {
+  count      = "${length(var.inline_policies)}"
+  policy     = "${element(var.inline_policies, count.index)}"
+  role       = "${aws_iam_role.role.id}"
+}
