@@ -4,12 +4,12 @@ variable name {
 
 variable inline_policies {
   description = "Optional additional inline IAM policy documents."
-  type        = "list"
+  type        = list(string)
   default     = []
 }
 
 variable attachments {
   description = "Optional additional attached IAM policy ARNs."
-  type        = "list"
+  type        = list(string)
   default     = []
 }
