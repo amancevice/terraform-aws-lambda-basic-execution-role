@@ -8,7 +8,7 @@ Lambda IAM role with `AWSLambdaBasicExecution` policy attached
 ## Usage
 
 ```hcl
-module basic {
+module "basic_execution_role" {
   source          = "amancevice/lambda-basic-execution-role/aws"
   name            = "my-lambda-role"
   attachments     = ["<optional-additional-policy-arns>"]
